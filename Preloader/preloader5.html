@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Preloader</title>
+          <style>
+          *{
+                    margin: 0; padding: 0; box-sizing: border-box;
+          }
+          html{
+                    font-size: 62.5%;
+          }
+          .main_div{
+                    width: 100vw; height: 100vh; background-color: rgb(5, 5, 5);
+                    display: grid; place-items: center;
+          }
+
+          .preloader_div{
+                    width: 15rem; height: 15rem; 
+                    position: relative;
+          }
+          .rota{
+                    width: 15rem; height: 15rem;
+                    border-right: 0.8rem solid rgb(76, 3, 247);
+                    /* border-top: 1rem solid lightgrey; */
+                    /* border-left: 1.5rem solid rgb(252, 2, 189); */
+                    /* border-bottom: 1rem solid  lightgrey; */
+                    border-radius: 50%;
+                    animation: rot 2s linear infinite;
+          }
+
+          @keyframes rot{
+                    0%{
+                              transform: rotate(0deg);
+                    }
+                    100%{
+                              transform: rotate(360deg);
+                    }
+          }
+
+          h1{
+                    color: rgb(0, 255, 0);
+                    position: absolute;
+                    top: 50%; left: 50%;
+                    transform: translate(-50% , -50%);
+          }
+
+          </style>
+</head>
+<body>
+          <div class="main_div">
+                    <div class="preloader_div">
+                    <div class="rota"></div>
+          <h1 align="center"> <b style="color: red;">Game Zone</b> <hr> <i>Loading...</i> </h1>
+                    </div>
+          </div>
+
+</body>
+</html>
